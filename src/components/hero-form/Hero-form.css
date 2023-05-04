@@ -1,0 +1,159 @@
+.about {
+    background: url("../../assets/images/about-img-shadow.png") no-repeat;
+    background-size: 100%;
+    background-position: center;
+    padding: 120px 0 var(--section-padding);
+  }
+  
+  .about-banner { margin-bottom: 40px; }
+  
+  .about-img { width: 100%; }
+  
+  .character { display: none; }
+  
+  .about-content {
+    background: var(--raisin-black-1);
+    color: var(--white);
+    padding: 40px 20px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px hsla(0, 0%, 0%, 0.2);
+  }
+  
+  .about-subtitle {
+    color: var(--brand-red);
+    font-family: var(--ff-oswald);
+    font-size: var(--fs-8);
+    font-weight: var(--fw-500);
+    text-transform: uppercase;
+    margin-bottom: 15px;
+  }
+  
+  .about-title {
+    font-family: var(--ff-oswald);
+    font-size: var(--fs-2);
+    line-height: 1.2;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+  
+  .about-title strong { color: var(--brand-red); }
+  
+  .about-text,
+  .about-bottom-text {
+    color: var(--light-gray);
+    font-size: var(--fs-9);
+    line-height: 1.8;
+    letter-spacing: 0.5px;
+  }
+  
+  .about-text { margin-bottom: 20px; }
+  
+  .about-bottom-text {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 8px;
+  }
+  
+  .about-bottom-text ion-icon {
+    color: var(--brand-red);
+    font-size: 25px;
+    --ionicon-stroke-width: 45px;
+  }
+
+  @media (min-width: 575px) {
+
+    .about-banner {
+      position: relative;
+      max-width: 410px;
+      margin-inline: auto;
+      z-index: 1;
+    }
+  
+    .character-2 {
+      display: block;
+      position: absolute;
+      top: 120px;
+      left: 160px;
+      max-width: 150px;
+      z-index: -1;
+    }
+  
+    .about-content { padding: 60px 40px; }
+  
+  }
+
+  @media (min-width: 768px) {
+  
+    .about-banner { max-width: 430px; }
+  
+    .character {
+      display: block;
+      position: absolute;
+      z-index: -1;
+    }
+  
+    .character-1 {
+      width: 130px;
+      top: 110px;
+      left: -120px;
+    }
+  
+    .character-2 { left: 200px; }
+  
+    .character-3 {
+      top: 0;
+      right: -112px;
+    }
+  
+  }
+
+  @media (min-width: 1024px) {
+
+    .about { padding-top: 200px; }
+  
+    .about-content {
+      max-width: 700px;
+      margin-inline: auto;
+    }
+  
+  }
+
+  @media (min-width: 1200px) {
+
+    .about {
+      background-size: 55%;
+      background-position: 90% center;
+    }
+  
+    .about .container {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: space-between;
+      align-items: center;
+      gap: 100px;
+      padding-right: 110px;
+    }
+  
+    .about-banner {
+      margin-inline: 0;
+      margin-bottom: 0;
+    }
+
+    .about-img { max-height: 450px; }
+  
+    .character-2 {
+      left: 155px;
+      top: 70px;
+    }
+  
+    .about-content {
+      max-width: 600px;
+      margin-inline: 0;
+    }
+  
+  }
+  
+
+  
+  
